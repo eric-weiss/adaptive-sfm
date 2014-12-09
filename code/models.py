@@ -9,6 +9,11 @@ from collections import OrderedDict
 
 
 class BilinearModel():
+	'''This class implements a simple version of the model without
+	any depth variables or inertial measurements. It learns to predict
+	video frames and infers "motion" estimates that influence the 
+	temporal dynamics.
+	'''
 	
 	def __init__(self, data_dims, c_dims, v_dims, image_var=1.0,
 					c_var=1.0, v_var=1.0/25.0):
